@@ -54,7 +54,7 @@ Env Helper offers functions for various data types, including:
 
 ## Documentation
 
-You can find the full documentation in the `docs/` folder or online at [Env Helper Docs](./docs/index.html).
+You can find the full documentation in the `docs/` folder or online at [Env Helper Docs](https://scolastico-dev.github.io/env-helper/).
 
 ## License
 
