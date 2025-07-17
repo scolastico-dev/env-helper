@@ -12,9 +12,10 @@
     "README.md"
   ],
   "scripts": {
+    "build:index": "node generate-index.mjs",
     "build:ts": "parcel build",
     "build:docs": "typedoc --out docs src/index.ts",
-    "build": "pnpm build:ts && pnpm build:docs"
+    "build": "pnpm build:index && pnpm build:ts && pnpm build:docs"
   },
   "devDependencies": {
     "@parcel/packager-ts": "2.15.4",
