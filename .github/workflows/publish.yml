@@ -18,7 +18,7 @@ jobs:
       - name: Install node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           registry-url: https://registry.npmjs.org
 
       - name: Install pnpm
@@ -34,7 +34,7 @@ jobs:
         run: pnpm build
 
       - name: Publish package on NPM
-        run: pnpm publish . --access public --no-git-checks
+        run: npm publish . --access public --no-git-checks
 
       - name: Publish Documentation
         uses: JamesIves/github-pages-deploy-action@v4
