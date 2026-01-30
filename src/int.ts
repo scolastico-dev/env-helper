@@ -7,5 +7,5 @@ import { $str } from "./str";
  * @returns The integer value parsed from the environment variable
  * @throws Will throw an error if the environment variable is missing and no default is provided
  */
-export const $int = (key: string, def?: number) =>
+export const $int = (key: string, def?: number): number =>
   parseInt($str(key, def?.toString()), 10);

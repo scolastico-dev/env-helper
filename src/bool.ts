@@ -7,5 +7,5 @@ import { $str } from "./str";
  * @returns The boolean value parsed from the environment variable (case-insensitive 'true')
  * @throws Will throw an error if the environment variable is missing and no default is provided
  */
-export const $bool = (key: string, def?: boolean) =>
+export const $bool = (key: string, def?: boolean): boolean =>
   $str(key, def?.toString()).toLowerCase() === 'true';

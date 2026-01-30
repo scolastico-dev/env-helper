@@ -7,7 +7,7 @@ import { $str } from "./str";
  * @returns The validated URL string from the environment variable
  * @throws Will throw an error if the URL is invalid, or if the environment variable is missing and no default is provided
  */
-export const $url = (key: string, def?: string) => {
+export const $url = (key: string, def?: string): string => {
   const url = $str(key, def);
   try {
     new URL(url);

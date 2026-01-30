@@ -7,7 +7,7 @@ import { $url } from "./url";
  * @returns The validated URL string with a guaranteed trailing slash
  * @throws Will throw an error if the URL is invalid, or if the environment variable is missing and no default is provided
  */
-export const $urlWithTrailingSlash = (key: string, def?: string) => {
+export const $urlWithTrailingSlash = (key: string, def?: string): string => {
   let url = $url(key, def);
   if (!url.endsWith('/')) url = url + '/';
   return url;

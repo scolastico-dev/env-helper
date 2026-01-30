@@ -8,7 +8,7 @@ import { $str } from "./str";
  * @returns The string value from the environment variable if it's in the allowed values list
  * @throws Will throw an error if the value is not in the allowed values list, or if the environment variable is missing and no default is provided
  */
-export const $oneOf = (key: string, values: string[], def?: string) => {
+export const $oneOf = (key: string, values: string[], def?: string): string => {
   const value = $str(key, def);
   if (!values.includes(value)) {
     throw new Error(`Invalid value for environment variable: ${key}`);

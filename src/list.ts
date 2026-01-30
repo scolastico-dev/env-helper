@@ -7,7 +7,7 @@ import { $str } from "./str";
  * @returns An array of strings parsed from the comma-separated environment variable, with empty strings filtered out
  * @throws Will throw an error if the environment variable is missing and no default is provided
  */
-export const $list = (key: string, def?: string[]) =>
+export const $list = (key: string, def?: string[]): String[] =>
   $str(key, def?.join(','))
     .split(',')
-    .filter((x) => x !== '');
+    .filter((x: string) => x !== '');

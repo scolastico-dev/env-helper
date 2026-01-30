@@ -1,4 +1,4 @@
-# `@scolastico-dev/env-helper`
+# [`@scolastico-dev/env-helper`](https://github.com/scolastico-dev/env-helper)
 
 `@scolastico-dev/env-helper` is a TypeScript library that simplifies working with environment variables. It provides an intuitive API to validate, parse, and define default values for environment variables. The library is especially useful in Node.js projects that rely on configuration management.
 
@@ -40,17 +40,6 @@ export class CfgService {
   readonly redisUrl = $str('REDIS_URL', 'redis://localhost:6379');
 }
 ```
-
-### Supported Types
-
-Env Helper offers functions for various data types, including:
-
-* `$bool`: For boolean values (`true`/`false`)
-* `$int`: For integers
-* `$float`: For floating-point numbers
-* `$str`: For strings
-* `$list`: For lists
-* `$url`: For URLs
 
 ## Documentation
 

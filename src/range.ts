@@ -9,7 +9,7 @@ import { $float } from "./float";
  * @returns The number value from the environment variable if it's within the specified range
  * @throws Will throw an error if the value is not a valid number, is outside the range, or if the environment variable is missing and no default is provided
  */
-export const $range = (value: string, min: number, max: number, def?: number) => {
+export const $range = (value: string, min: number, max: number, def?: number): number => {
   const i = $float(value, def);
   if (isNaN(i)) throw new Error(`Invalid number for environment variable: ${value}`);
   if (i < min) throw new Error(`Value ${i} is less than minimum ${min} for environment variable: ${value}`);

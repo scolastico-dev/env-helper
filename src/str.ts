@@ -7,5 +7,5 @@ import { $err } from "./err";
  * @returns The string value from the environment variable or the default value
  * @throws Will throw an error if the environment variable is missing and no default is provided
  */
-export const $str = (key: string, def?: string) =>
+export const $str = (key: string, def?: string): string =>
   process.env[key] || (typeof def === 'string' ? def : $err(key));

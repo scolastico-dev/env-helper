@@ -8,7 +8,7 @@ import { $float } from "./float";
  * @returns The number value from the environment variable if it meets the minimum requirement
  * @throws Will throw an error if the value is not a valid number, is below the minimum, or if the environment variable is missing and no default is provided
  */
-export const $min = (value: string, min: number, def?: number) => {
+export const $min = (value: string, min: number, def?: number): number => {
   const i = $float(value, def);
   if (isNaN(i)) throw new Error(`Invalid number for environment variable: ${value}`);
   if (i < min) throw new Error(`Value ${i} is less than minimum ${min} for environment variable: ${value}`);

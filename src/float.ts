@@ -7,5 +7,5 @@ import { $str } from "./str";
  * @returns The floating-point number value parsed from the environment variable
  * @throws Will throw an error if the environment variable is missing and no default is provided
  */
-export const $float = (key: string, def?: number) =>
+export const $float = (key: string, def?: number): number =>
   parseFloat($str(key, def?.toString()));
