@@ -1,5 +1,9 @@
 {
   "name": "@scolastico-dev/env-helper",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scolastico-dev/env-helper"
+  },
   "version": "0.0.0",
   "source": "src/index.ts",
   "main": "dist/index.cjs",
