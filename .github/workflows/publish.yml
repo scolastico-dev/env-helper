@@ -34,7 +34,7 @@ jobs:
         run: pnpm build
 
       - name: Publish package on NPM
-        run: npm publish . --access public --no-git-checks
+        run: npm publish . --access public --no-git-checks --provenance
 
       - name: Publish Documentation
         uses: JamesIves/github-pages-deploy-action@v4
